@@ -1,0 +1,8 @@
+name: my first web github action
+on: [push]
+jobs:
+    print-hello-world:
+        runs-on: ubuntu-latest
+        steps:
+            -uses: actions/checkout@v2
+            -run: tree
